@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
 import './Chatbot.css'
 import {FiSend} from 'react-icons/fi'
-import dialogo from './../../dialogo.json'
+//import dialogo from './../../dialogo.json'
+import api from '../../api'
+
 
 const Chatbot = () =>{
 
     const [chatOpen, setChatOpen] = useState(false);
+    const [dialogo, setDialogo] = useState([
+        {
+            text: 'Olá, bem vindo ao chatbot!',
+            user: 'assistente',
+        },
+        {
+            text: 'Gostaria de comprar um notebook.',
+            user: 'cliente',
+        }
+    ]);
 
     const[formData,setFormData] = useState({
         question: '',
@@ -31,7 +43,9 @@ const Chatbot = () =>{
         
         const data = [{[name]:value}]
         console.log(data);
-        //await api.post('points', data)
+        const resp = await api.post('api/botStore/userQuestion', data)
+
+        setDialogo(resp)
     }
 
     return(
