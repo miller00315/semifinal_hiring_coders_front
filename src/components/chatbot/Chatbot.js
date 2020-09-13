@@ -4,6 +4,7 @@ import { FiSend } from 'react-icons/fi';
 import { useQuery } from 'react-apollo';
 import gql from 'graphql-tag';
 import { v4 as uuidV4 } from 'uuid';
+import { animateScroll } from 'react-scroll';
 
 const CHAT = gql`
   query CHAT(
@@ -104,6 +105,10 @@ const Chatbot = () => {
       messages,
     });
 
+    animateScroll.scrollToBottom({
+      containerId: 'chat',
+    });
+
     fetchMore({
       variables: {
         userId: message.user.id,
@@ -121,6 +126,10 @@ const Chatbot = () => {
             messages: values.messages.concat(fetchMoreResult.chat.items),
           });
         }
+
+        animateScroll.scrollToBottom({
+          containerId: 'chat',
+        });
       },
     });
   }
@@ -142,7 +151,7 @@ const Chatbot = () => {
       <div id="chatbot" className="chatbot">
         <div className="chat-header"> Chatbot </div>
 
-        <div className="chat-dialogo">
+        <div className="chat-dialogo" id="chat">
           {values.messages.map((item) => (
             <div key={item.id}>
               <p key={item.id} className="dialogo-text">
