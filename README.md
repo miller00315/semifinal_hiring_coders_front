@@ -1,19 +1,12 @@
-<h1>README Repositório Front end</h1>
+<h3> Node: Este projeto ainda não inclui a AWS, somente React e Vtex </h3>
 
-<h2>Utilizando o submódulo</h2>
+<h1>Para executar este projeto:</h1>
 
-<p>Lembre-se de efetuar o comando <b>git checkout sua_branch</b> para trabalhar na branch correta.</p>
-<p>Sempre inicie uma nnova branch a partir da master, evitando assim que conflitos ou erros sejam propagados.</p>
-<p>Vamos tentar manter apenas com o código que plenamente funcional</p>
+<ul>
+    <li>Baixe as dependencias do caminho "store-block>react" com o comando "yarn"</li>
+    <li>Baixe as dependencias do caminho "store-block>node" com o comando "yarn"</li>
+    <li>Execute o "vtex browse" dentro desta pasta</li>
+    <li>Execute o "vtex link" dentro da pasta "minimum-boilerplate-theme"</li>
+    <li>Execute o "vtex link" dentro da pasta "store-block"</li>
+</ul>
 
-<h2>Sobre este repositório</h2>
-
-<p>Baixar dependencias</p>
-```
-yarn
-```
-
-<p>Rodar este repositório</p>
-```
-yarn start
-```
