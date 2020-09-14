@@ -1,4 +1,4 @@
-<h3> Node: Este projeto ainda não inclui a AWS, somente React e Vtex </h3>
+<h3> Nota: Este projeto ainda não inclui a AWS, somente React e Vtex </h3>
 
 <h1>Para executar este projeto:</h1>
 
