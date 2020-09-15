@@ -21,7 +21,9 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"]
+  },
   "product-summary.shelf": {
     "children": [
       "product-summary-add-to-list-button",
