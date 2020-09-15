@@ -14,7 +14,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": ["flex-layout.row#desktop", "header-row#menu"]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -32,6 +32,48 @@
       "login",
       "minicart.v2"
     ]
+  },
+  "header-row#menu":{
+    "children": [
+      "header-spacer",
+      "vtex.menu@2.x:menu#categories",
+      "header-spacer"
+    ]
+  },
+  "vtex.menu@2.x:menu#categories": {
+    "children": [
+      "menu-item#major-appliances",
+      "menu-item#small-appliances",
+      "menu-item#electronics"
+    ],
+  
+    "props":{
+      "orientation": "horizontal"
+    }
+  },
+  "menu-item#major-appliances":{
+    "props":{
+      "text": "Major Appliances",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "menu-item#small-appliances":{
+    "props":{
+      "text": "Small Appliances",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "menu-item#electronics":{
+    "props":{
+      "text": "Eletronics",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
   },
   "flex-layout.col#spacer": {
     "props": {
