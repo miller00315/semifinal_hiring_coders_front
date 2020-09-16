@@ -1,0 +1,73 @@
+{
+  "store.home": { 
+    "blocks": [
+      "slider-layout",
+      // "shelf",
+      "countdown"
+    ]
+  },
+  // "rich-text": { 
+  //   "props": { 
+  //     "text": "VTEX Store Framework",
+  //     "textAlignment": "CENTER",
+  //     "textPosition": "CENTER",
+  //     "font": "t-heading-1"
+  //   }
+  // },
+  "slider-layout": {
+    "children": ["info-card#brand1","info-card#brand2","info-card#brand3"],
+    "props": {
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  "info-card#brand1": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=453&q=80",
+      "headline": "New Kitchen Festival",
+      "subhead": "Build your new kitchen with 20% discount.",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#brand2": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://images.unsplash.com/photo-1538944570562-2c9cb7857097?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80",
+      "headline": "Vintage Pink",
+      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#brand3": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://images.unsplash.com/photo-1505693196193-bfd859ae01d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=450&q=80",
+      "headline": "Vintage Pink",
+      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  }
+}
