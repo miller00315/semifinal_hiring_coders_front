@@ -1,5 +1,3 @@
-<h1>README Repositório Front end</h1>
-
 <h3>Para executar este projeto:</h3>
 
 <ul>
