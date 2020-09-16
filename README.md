@@ -1,4 +1,6 @@
-<h1>Para executar este projeto:</h1>
+<h1>README Repositório Front end</h1>
+
+<h3>Para executar este projeto:</h3>
 
 <ul>
     <li>Baixe as dependencias do caminho "store-block>react" com o comando "yarn"</li>
