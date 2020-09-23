@@ -6,9 +6,7 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
+    "children": ["sticky-layout#desktop"]
   },
   "sticky-layout#desktop": {
     "props": {
@@ -33,7 +31,7 @@
       "minicart.v2"
     ]
   },
-  "header-row#menu":{
+  "header-row#menu": {
     "children": [
       "header-spacer",
       "vtex.menu@2.x:menu#categories",
@@ -44,32 +42,50 @@
     "children": [
       "menu-item#major-appliances",
       "menu-item#small-appliances",
-      "menu-item#electronics"
+      "menu-item#electronics",
+      "menu-item#computer",
+      "menu-item#smartphone"
     ],
-  
-    "props":{
+
+    "props": {
       "orientation": "horizontal"
     }
   },
-  "menu-item#major-appliances":{
-    "props":{
+  "menu-item#major-appliances": {
+    "props": {
       "text": "Major Appliances",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1"
     }
   },
-  "menu-item#small-appliances":{
-    "props":{
+  "menu-item#small-appliances": {
+    "props": {
       "text": "Small Appliances",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1"
     }
   },
-  "menu-item#electronics":{
-    "props":{
+  "menu-item#electronics": {
+    "props": {
       "text": "Eletronics",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "menu-item#computer": {
+    "props": {
+      "text": "Computer",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "menu-item#smartphone":{
+    "props": {
+      "text": "Smartphone",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "font": "t-heading-1"
